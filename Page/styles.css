@@ -16,6 +16,7 @@ body {
   background-size: cover;
   /* background: no-repeat url("./nature.jpg") center cover; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: aqua;
@@ -25,12 +26,14 @@ body {
 
 .content {
   color: white;
+  margin-bottom: 2rem;
 }
 
 .heading {
   font-family: Lato, "sans-serif";
   text-align: center;
   margin-bottom: 2rem;
+  color: white;
 }
 
 .paragraph {
@@ -39,16 +42,44 @@ body {
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: #ff0;
   padding: 10px 20px;
-  background-color: rgba(244, 212, 231, 0.4);
+  color: skyblue;
   text-align: center;
 }
 
+.main-para {
+  background-color: rgba(244, 212, 231, 0.4);
+  color: white;
+}
+
+.facts-container > ol {
+  padding: 0 40px;
+}
+.facts-container > ol > li > span {
+  color: white;
+}
+.sub-heading {
+  font-size: 1rem;
+  font-family: Lato, "sans-serif";
+}
+.fact-para {
+  text-align: left;
+  font-size: 1rem;
+}
 @media (min-width: 992px) {
   .heading {
     font-size: 3rem;
   }
   .paragraph {
     font-size: 1.5rem;
+  }
+  .facts-container > ol {
+    padding: 0 160px;
+  }
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+  .fact-para {
+    font-size: 1.2rem;
   }
 }
 
@@ -58,5 +89,14 @@ body {
   }
   .paragraph {
     font-size: 2rem;
+  }
+  .facts-container > ol {
+    padding: 0 200px;
+  }
+  .sub-heading {
+    font-size: 2rem;
+  }
+  .fact-para {
+    font-size: 1.5rem;
   }
 }
